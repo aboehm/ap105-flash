@@ -116,4 +116,5 @@ SPEED=1000 ap105-flash <SERIAL NUMBER>
 - [OpenWRT device page](https://openwrt.org/toh/aruba/ap-105)
 - [Datasheet MX25L12835](https://pdf1.alldatasheet.com/datasheet-pdf/view/575542/MCNIX/MX25L12835E.html)
 - [RaspberryPi ASCII Art](http://weyprecht.de/2015/11/30/raspberry-pi-ascii-art/)
+- [flashrom page for RaspberryPi](https://www.flashrom.org/RaspberryPi)
 
