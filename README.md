@@ -32,18 +32,18 @@ sudo apt-get install flashrom
 Connect the AP105 Flash chip. The red status LED on AP105 must glow
 
 ```
-        *-------------------------------------*
-        |                                     |
-        |          ------|MX25L12835------    |
-        |         |                       |   |
-        |   *-----|1 HOLD#/SIO3    CLK 16 |---|----*
-        |   *-----|2 VCC       SI/SIO0 15 |---*    |
-        |   |     |3 RESET#               |        |
-        |   |     |4                      |        |
-        |   |     |5                      |        |
-        |   |     |6                      |        |
-        |   |  *--|7 CS#           GND 10 |------* |
-        | *-|-----|8 SO/SIO1     WP#/SIO2 |-*    | |
+          *-----------------------------------*
+          |                                   |
+          |        ------|MX25L12835|-----    |
+          |       |                       |   |
+          |       |1 HOLD#/SIO3    CLK 16 |---|----*
+          | *-----|2 VCC       SI/SIO0 15 |---*    |
+          | |     |3 RESET#               |        |
+          | |     |4                      |        |
+          | |     |5                      |        |
+          | |     |6                      |        |
+          | |  *--|7 CS#           GND 10 |------* |
+        *---------|8 SO/SIO1     WP#/SIO2 |-*    | |
         | | |  |   -----------------------  |    | |
         | | |  |                            |    | | 
         | | *-------------------------------*    | |
@@ -100,6 +100,8 @@ After a confirmation the patched file will be flashed to the device.
 - Ensure the RaspberryPi have enough power like a power supply with 5V/2A
 - Ensure the red LED is illuminated on the AP105
 - Reduce the SPI speed to 1000 kHz (default 16500 kHz)
+- If you use adapter board try it with direct cabling
+- Maybe use shorter cables
 
 ```
 SPEED=1000 ap105-flash <SERIAL NUMBER>
@@ -117,4 +119,4 @@ SPEED=1000 ap105-flash <SERIAL NUMBER>
 - [Datasheet MX25L12835](https://pdf1.alldatasheet.com/datasheet-pdf/view/575542/MCNIX/MX25L12835E.html)
 - [RaspberryPi ASCII Art](http://weyprecht.de/2015/11/30/raspberry-pi-ascii-art/)
 - [flashrom page for RaspberryPi](https://www.flashrom.org/RaspberryPi)
-
+- [OpenWRT - Install OpenWRT on Aruba AP-105](https://www.youtube.com/watch?v=Vof__dPiprs)
